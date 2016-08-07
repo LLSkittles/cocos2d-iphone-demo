@@ -17,7 +17,6 @@
 @property (nonatomic, strong) CCProgressNode *realHp;
 @property (nonatomic, strong) CCProgressNode *hpBackground;
 
-
 - (void)flying;
 - (void)die;
 - (void)drop;

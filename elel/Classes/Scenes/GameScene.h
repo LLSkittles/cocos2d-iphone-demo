@@ -22,6 +22,7 @@
     CCTiledMap *map;
     CCPhysicsNode *physicsWorld;
     Player *player;
+    BOOL bGameOver;
 }
 
 @property (nonatomic, strong) NSArray *distanceBgArray;

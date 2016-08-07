@@ -31,8 +31,6 @@
     // Just make an assert, so that you can catch it in debug
     NSAssert(self, @"Whoops");
     
-    [self setUserInteractionEnabled:YES];
-    
     [self creatSprite];
     [self playerFlyToScene];
     
@@ -108,6 +106,7 @@
     CCActionCallBlock *callBack = [CCActionCallBlock actionWithBlock:^{
         
         player.physicsBody.affectedByGravity = YES;
+        [self setUserInteractionEnabled:YES];
         [player drop];
         [self addHpProgress];
         [self schedule:@selector(everySecond:) interval:1.0/60];
@@ -193,8 +192,6 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(Player *)nodeA bird:(CCNode *)nodeB{
 
-    CCActionBlink *blink = [CCActionBlink actionWithDuration:0.3 blinks:2];
-    [nodeA runAction:blink];
     nodeA.realHp.percentage  -= 5;
     [self gameOver];
 
@@ -205,13 +202,10 @@
 }
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(Player *)nodeA airship:(CCNode *)nodeB{
-    CCActionBlink *blink = [CCActionBlink actionWithDuration:0.3 blinks:2];
-    [nodeA runAction:blink];
+
     nodeA.realHp.percentage  -= 5;
     [self gameOver];
-
     [nodeB removeFromParent];
-    
     
     return NO;
 }
@@ -219,7 +213,11 @@
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair player:(Player *)nodeA ground:(CCNode *)nodeB{
     
-    [player down];
+
+    if (!bGameOver) {
+
+        [player down];
+    }
     
     return YES;
 }
@@ -227,7 +225,7 @@
 
 -(void)everySecond:(CCTime)delta {
     
-    player.realHp.percentage  -= 0.5;
+    player.realHp.percentage  -= 0.05;
     [self gameOver];
 
     CGSize visiableSize = [[CCDirector sharedDirector] viewSize];
@@ -270,6 +268,7 @@
     
     if (player.realHp.percentage <= 0) {
         
+        bGameOver = YES;
         [self unscheduleAllSelectors];
         self.userInteractionEnabled = NO;
         [player die];
