@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="300" height="10" tilewidth="64" tileheight="64" nextobjectid="100">
+ <tileset firstgid="1" name="tile" tilewidth="64" tileheight="64" tilecount="60" columns="10">
+  <image source="tile.png" width="640" height="384"/>
+ </tileset>
+ <layer name="bg" width="300" height="10">
+  <data encoding="base64" compression="zlib">
+   eJzt2ccKAlEMhWHrygZ2QQW72BW7vv9zeQRnO0IyIdzh/PAt5yaQ5WQyjKW35w9jjDHGGGMs/dWhAU3vRZgo7f14fxZSfRjA0HsRJkp7P96fRWUh573En+awgKXhjAlMYWY4w7sRjB3mxt0vDwUoCr8PPa+baEtib8kbJSgr51p3gCOcDGdsYQd7wxnerWHjMDfufhWoQk34feh53URbEntL3mhBWznXuu+/6xe8DWfc4A4PwxneXeDqMDfufh3oQk/4feh53URbEntHb6yIiAJxJiIKxAe3yHvt
+  </data>
+ </layer>
+ <objectgroup name="bigObstacle">
+  <object id="1" x="979" y="285" width="27" height="224"/>
+  <object id="2" x="2933" y="285" width="33" height="224"/>
+  <object id="3" x="3942" y="258" width="39" height="252"/>
+  <object id="4" x="4888" y="273" width="42" height="239"/>
+  <object id="5" x="6694" y="224" width="30" height="285"/>
+  <object id="6" x="8524" y="285" width="24" height="224"/>
+  <object id="7" x="10758" y="230" width="24" height="279"/>
+  <object id="8" x="13518" y="230" width="33" height="279"/>
+  <object id="9" x="14642" y="261" width="39" height="248"/>
+  <object id="10" x="15997" y="276" width="27" height="233"/>
+  <object id="11" x="16903" y="273" width="18" height="239"/>
+  <object id="12" x="17512" y="300" width="32" height="212"/>
+ </objectgroup>
+ <objectgroup name="heart">
+  <object id="13" x="1252" y="300"/>
+  <object id="14" x="1509" y="294"/>
+  <object id="15" x="1773" y="297"/>
+  <object id="16" x="2270" y="303"/>
+  <object id="17" x="2533" y="303"/>
+  <object id="18" x="2758" y="303"/>
+  <object id="19" x="4212" y="40"/>
+  <object id="20" x="4212" y="224"/>
+  <object id="21" x="4208" y="408"/>
+  <object id="22" x="7700" y="403" width="21" height="21"/>
+  <object id="23" x="7900" y="282"/>
+  <object id="24" x="8097" y="161"/>
+  <object id="25" x="8342" y="97"/>
+  <object id="26" x="8615" y="97"/>
+  <object id="27" x="8882" y="97"/>
+  <object id="28" x="9118" y="164"/>
+  <object id="29" x="9327" y="288"/>
+  <object id="30" x="9512" y="418"/>
+  <object id="31" x="10139" y="421"/>
+  <object id="32" x="10291" y="288"/>
+  <object id="33" x="10421" y="158"/>
+  <object id="34" x="11173" y="452"/>
+  <object id="35" x="11436" y="455"/>
+  <object id="36" x="12055" y="406"/>
+  <object id="37" x="12252" y="415"/>
+  <object id="38" x="12582" y="291"/>
+  <object id="39" x="12764" y="285"/>
+  <object id="40" x="13091" y="158"/>
+  <object id="41" x="13285" y="164"/>
+  <object id="42" x="14364" y="158"/>
+  <object id="43" x="14561" y="161"/>
+  <object id="44" x="14873" y="297"/>
+  <object id="45" x="15064" y="294"/>
+  <object id="46" x="15403" y="409"/>
+  <object id="47" x="15588" y="409"/>
+  <object id="48" x="16473" y="170"/>
+  <object id="49" x="16473" y="294"/>
+  <object id="50" x="16470" y="427"/>
+  <object id="51" x="17236" y="409"/>
+  <object id="52" x="17318" y="348"/>
+  <object id="53" x="17388" y="282"/>
+  <object id="54" x="17452" y="209"/>
+  <object id="55" x="17518" y="148"/>
+  <object id="56" x="17582" y="215"/>
+  <object id="57" x="17639" y="279"/>
+  <object id="58" x="17700" y="352"/>
+  <object id="59" x="17770" y="424"/>
+  <object id="60" x="17827" y="352"/>
+  <object id="61" x="17897" y="273"/>
+  <object id="62" x="17967" y="212"/>
+  <object id="63" x="18024" y="148"/>
+  <object id="64" x="18088" y="209"/>
+  <object id="65" x="18155" y="276"/>
+  <object id="66" x="18224" y="361"/>
+  <object id="67" x="18282" y="430"/>
+ </objectgroup>
+ <objectgroup name="airship">
+  <object id="68" x="5652" y="224" width="55" height="42">
+   <ellipse/>
+  </object>
+  <object id="69" x="12342" y="194" width="70" height="39">
+   <ellipse/>
+  </object>
+  <object id="70" x="15770" y="245" width="82" height="52">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="bird">
+  <object id="71" x="2003" y="133" width="33" height="33">
+   <ellipse/>
+  </object>
+  <object id="72" x="2003" y="288" width="33" height="33">
+   <ellipse/>
+  </object>
+  <object id="73" x="2006" y="445" width="33" height="33">
+   <ellipse/>
+  </object>
+  <object id="74" x="3433" y="155">
+   <ellipse/>
+  </object>
+  <object id="75" x="6182" y="82">
+   <ellipse/>
+  </object>
+  <object id="76" x="6182" y="203">
+   <ellipse/>
+  </object>
+  <object id="77" x="6185" y="324">
+   <ellipse/>
+  </object>
+  <object id="78" x="6179" y="455">
+   <ellipse/>
+  </object>
+  <object id="79" x="7273" y="218">
+   <ellipse/>
+  </object>
+  <object id="80" x="7509" y="215">
+   <ellipse/>
+  </object>
+  <object id="81" x="9864" y="252">
+   <ellipse/>
+  </object>
+  <object id="82" x="10085" y="252">
+   <ellipse/>
+  </object>
+  <object id="83" x="11306" y="321">
+   <ellipse/>
+  </object>
+  <object id="84" x="13194" y="203">
+   <ellipse/>
+  </object>
+  <object id="85" x="13194" y="345">
+   <ellipse/>
+  </object>
+  <object id="86" x="14936" y="167">
+   <ellipse/>
+  </object>
+  <object id="87" x="15424" y="333">
+   <ellipse/>
+  </object>
+  <object id="88" x="17173" y="176">
+   <ellipse/>
+  </object>
+  <object id="89" x="17179" y="358">
+   <ellipse/>
+  </object>
+  <object id="90" x="17773" y="158">
+   <ellipse/>
+  </object>
+  <object id="91" x="18348" y="173">
+   <ellipse/>
+  </object>
+  <object id="92" x="18342" y="367">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>
